@@ -1,0 +1,250 @@
+@font-face {
+  font-family: Flanella;
+  src: url('/assets/fonts/Flanella.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: #111;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6875;
+  background-color: #fff;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 50px 0;
+  z-index: 0;
+  text-align: center;
+  padding: 100px 0;
+  overflow-x: hidden;
+}
+
+.section__container {
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.section__title {
+  font-family: 'Flanella';
+  font-size: 52px;
+  font-weight: normal;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .section__title {
+    font-size: 74px;
+  }
+}
+
+.section__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section__text {
+  font-size: 16px;
+  letter-spacing: 0.025rem;
+}
+
+.section__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section--hero {
+  background: url('../img/bg-hero.jpg') no-repeat 10% 0 fixed;
+  background-size: cover;
+  background-position-x: 25%;
+  min-height: 100vh;
+}
+
+.section--hero .section__subtitle {
+  margin-bottom: 2rem;
+}
+
+.section--save-date {
+  background: url('../img/bg-save-date.jpg') no-repeat;
+  background-size: cover;
+  background-position-y: 17%;
+  min-height: 600px;
+}
+
+.section--festivities {
+  background: #fafafa;
+}
+
+.section--festivities .section__subtitle {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section--festivities .section__text {
+  margin-bottom: 2rem;
+}
+
+.section--photos .section__container {
+  max-width: 980px;
+}
+
+.section--photos .section__grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .section--photos .section__grid {
+    grid-gap: 12px;
+  }
+}
+
+.section--registry {
+  background: #fafafa;
+}
+
+.section--registry .section__text {
+  margin-bottom: 3rem;
+}
+
+.section--registry .section__grid {
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .section--registry .section__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.section--registry .section__link {
+  margin: 0 auto 1.25rem auto;
+}
+
+@media (min-width: 768px) {
+  .section--registry .section__link {
+    margin: auto;
+  }
+}
+
+.section--registry .section__img {
+  width: 100%;
+  height: auto;
+  max-width: 125px;
+  max-height: 90px;
+  filter: grayscale(100%);
+  transition: 0.3s filter linear;
+}
+
+.section--registry .section__img:hover {
+  filter: grayscale(0);
+}
+
+.section--add-story {
+  background: url('../img/bg-add-story.jpg') no-repeat;
+  background-size: cover;
+  background-position-x: 35%;
+  min-height: 600px;
+}
+
+.section--add-story .section__subtitle {
+  display: inline-block;
+  text-transform: none;
+}
+
+.section--add-story .section__subtitle:hover {
+  text-decoration: underline;
+}
+
+.section--celebrate .section__text {
+  margin-bottom: 2rem;
+}
+
+.section--overlay::after {
+  content: '';
+  display: block;
+  background: #000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section--overlay .section__title,
+.section--overlay .section__subtitle {
+  color: #fff;
+}
+
+.btn {
+  font-weight: 400;
+  display: inline-flex;
+  padding: 15px 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.btn--transparent-white {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.btn--transparent-white:hover {
+  color: #111;
+  background: #fff;
+}
+
+.btn--transparent-black {
+  color: #111;
+  background: transparent;
+  border: 2px solid #111;
+}
+
+.btn--transparent-black:hover {
+  background: #e0f9f9;
+}
