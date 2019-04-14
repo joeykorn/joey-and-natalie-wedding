@@ -182,6 +182,12 @@ address {
   min-height: 600px;
 }
 
+@media (min-width: 1200px) {
+  .section--add-story {
+    background-position-y: 35%;
+  }
+}
+
 .section--add-story .section__subtitle {
   display: inline-block;
   text-transform: none;
