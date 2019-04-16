@@ -41,7 +41,6 @@ address {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 50px 0;
   z-index: 0;
   text-align: center;
   padding: 100px 0;
@@ -87,10 +86,16 @@ address {
 }
 
 .section--hero {
-  background: url('../img/bg-hero.jpg') no-repeat 10% 0 fixed;
+  background: url('../img/bg-hero.jpg') no-repeat;
   background-size: cover;
   background-position-x: 25%;
   min-height: 100vh;
+}
+
+@media (min-width: 992px) {
+  .section--hero {
+    background-attachment: fixed;
+  }
 }
 
 .section--hero .section__subtitle {
