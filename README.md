@@ -1,1 +1,3 @@
-# joey-and-natalie-wedding
+# Joey and Natalie's Wedding
+
+:ring: Our wedding website
